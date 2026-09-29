@@ -1,0 +1,146 @@
+# =============================================================
+# Dynamic QR Attendance System — .gitignore
+# =============================================================
+
+# -------------------------------------------------------------
+# SECRETS & ENVIRONMENT — never commit these
+# -------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# -------------------------------------------------------------
+# Python
+# -------------------------------------------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyo
+*.pyd
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -------------------------------------------------------------
+# Virtual environment
+# -------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# -------------------------------------------------------------
+# Database files
+# -------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# -------------------------------------------------------------
+# Alembic generated versions cache
+# -------------------------------------------------------------
+alembic/versions/__pycache__/
+
+# -------------------------------------------------------------
+# Testing
+# -------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+junit*.xml
+
+# -------------------------------------------------------------
+# Logs
+# -------------------------------------------------------------
+logs/
+*.log
+*.log.*
+
+# -------------------------------------------------------------
+# Frontend (if Node/Vite/React)
+# -------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# -------------------------------------------------------------
+# IDE / Editor
+# -------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# -------------------------------------------------------------
+# OS generated
+# -------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# -------------------------------------------------------------
+# MyPy / type checkers
+# -------------------------------------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# -------------------------------------------------------------
+# Celery / task queues (if used later)
+# -------------------------------------------------------------
+celerybeat-schedule
+celerybeat.pid
+
+# -------------------------------------------------------------
+# Uploads / generated QR codes / media
+# -------------------------------------------------------------
+uploads/
+media/
+qr_codes/
+static/uploads/
